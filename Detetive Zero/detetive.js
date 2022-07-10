@@ -1,15 +1,19 @@
 console.clear();
-const prompt = require('prompt-sync')();
-// let nome = prompt("Informe seu nome: ");
-// let idade = +prompt("Informe sua idade: ");
-// let endereco = prompt("Informe o local onde reside: ");
-// console.log();
+console.log("Seja bem vindo ao Jogo Detetive\n");
 
-// console.log(`
-//  Olá ${nome} sua idade é ${idade} anos,
-//  reside em ${endereco}
-//  seus dados são importante no momento da investigação.
-// `);
+const prompt = require('prompt-sync')();
+let nome = prompt("Informe seu nome: ");
+let idade = +prompt("Informe sua idade: ");
+let endereco = prompt("Informe o local onde reside: ");
+console.log();
+
+console.log(`
+ Olá ${nome} sua idade é ${idade} anos,reside em ${endereco}
+ seus dados são importante no momento da investigação.
+`);
+
+console.log(`${nome} o comparecimento na Delegacia de crime virtuais é uma mera investigação sobre um possível crime cibernético.
+ Por favor responda as  seguintes perguntas.\n`)
 
 const pergunta1 = prompt("Você hackeou a vítima (WhatsApp, Ligação ou Wi-fi)? [S/N] ").toUpperCase();
 const pergunta2 = prompt("Você chegou a usar engenharia social contra a vítima? [S/N] ").toUpperCase();
@@ -57,3 +61,5 @@ else
 {
   console.log("Ok, Obrgado por responder as perguntas, mas você não está envolvido no crime cibernético!");
 }
+
+console.log("\nObrigado por participar do Jogo Detetive!");
